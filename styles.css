@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;700&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -11,6 +11,10 @@
 :root {
   --violet: #8b48bf;
   --lightBlue: #3cddf3;
+  --blueGray: #1e1e26;
+  --darkBlue: #232851;
+  --lightGray: #f9f9f9;
+  --Gray: #b3b2b7;
 }
 /*----------- header styles----------- */
 
@@ -85,6 +89,7 @@ i {
   align-items: center;
   padding: 65px 165px 65px 165px;
   border: 2px solid magenta;
+  margin: auto;
 }
 .main__banner img {
   width: 540px;
@@ -129,7 +134,7 @@ i {
   width: 470px;
   color: #ffffff;
 }
-.information p:last-child{
+.information p:last-child {
   display: none;
 }
 .information h2 {
@@ -140,7 +145,53 @@ i {
   text-align: left;
   color: #ffffff;
   width: 470px;
- 
+}
+/* ----------BENEFITS------------ */
+.benefits {
+  background-color: var(--lightGray);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 30px;
+}
+.benefits__card {
+  width: 553px;
+  border: 1px solid cyan;
+  gap: 20px;
+}
+.benefits__card .title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.benefits__card .title .buttom {
+  width: 69px;
+  border-radius: 30px;
+}
+.benefits__card .title h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+  text-align: left;
+}
+.card__information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card__information p {
+  padding-left: 85px;
+  color: var(--Gray);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  text-align: left;
+  width: 95%;
+  border: solid 1px yellowgreen;
 }
 /* --------MEDIA QUERIESS----------- */
 @media only screen and (max-width: 480px) {
@@ -175,52 +226,49 @@ i {
     display: none;
   }
   /* -------------MAIN mobile-------------------- */
-.main {
-  flex-direction: column;
-  margin: auto;
-  padding: 40px 0px 40px 0px;
-  gap: 80px;
-  width: 85%;
-}
+  .main {
+    flex-direction: column;
+    margin: auto;
+    padding: 40px 0px 40px 0px;
+    gap: 80px;
+    width: 85%;
+  }
 
-.main .main__banner img,
-.main__information {
-  width: 100%;
-}
-.main__information h1 {
-  font-size: 40px;
-}
-.main__information p {
-  font-size: 14px;
-}
+  .main .main__banner img,
+  .main__information {
+    width: 100%;
+  }
+  .main__information h1 {
+    font-size: 40px;
+  }
+  .main__information p {
+    font-size: 14px;
+  }
 
-/* ------------Information MOBILE-------------- */
-.information{
-  flex-direction: column;
-  background-color: var(--lightBlue);
-  gap: 30px;
-  
-}
-.information h2, .information p{
-  width: 90%;
-  margin: auto;
-}
-.information h2{
-  font-size: 30px;
-  font-weight: 500;
-}
-.information p{
-  font-size: 15px;
-  font-weight: 300;
-}
-.information p{
-  display: none;
-}
-.information p:last-child{
-  display: flex;
-}
-
-
-
+  /* ------------Information MOBILE-------------- */
+  .information {
+    flex-direction: column;
+    background-color: var(--lightBlue);
+    gap: 30px;
+  }
+  .information h2,
+  .information p {
+    width: 90%;
+    margin: auto;
+  }
+  .information h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .information p {
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .information p {
+    display: none;
+  }
+  .information p:last-child {
+    display: flex;
+  }
 }
 /* ---------------------ACA ACABA mediaaa QUERIESSS------------------ */
