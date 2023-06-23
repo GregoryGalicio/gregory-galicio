@@ -78,7 +78,6 @@ i {
   align-items: center;
   color: #ffffff;
   font-weight: 500;
-
 }
 .header .container .buttom {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -270,7 +269,7 @@ i {
   margin: auto;
 }
 .best .buttom:hover {
-  animation: latidos1 1.5s infinite alternate ;
+  animation: latidos1 1.5s infinite alternate;
   background-color: var(--violetLight);
 }
 
@@ -288,15 +287,43 @@ i {
     transform: scale(1);
   }
 }
-#information2 .buttom{
-  background-color:white ;
+
+/* ------INFORMATION2 o LAST CHILD------------ */
+#information2 .buttom {
+  background-color: white;
   animation: none;
 }
-#information2 .buttom a{
+#information2 .buttom a {
   color: var(--violet);
 }
-
-/* ------INFORMATION LAST CHILD------------ */
+/* #information2 .buttom:hover a {
+  color: white;
+} */
+#information2 .buttom:hover {
+  animation: latidos2 1.5s infinite alternate;
+ 
+}
+@keyframes latidos2 {
+  0% {
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+    background-color: var(--blueGray);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+/* ----------FOOTER desktop------------- */
+footer {
+  background-color: var(--blueGray);
+  color: white;
+}
+.footer__widget {
+  color: white;
+  text-align: center;
+}
 
 /* --------MEDIA QUERIESS----------- */
 @media only screen and (max-width: 480px) {
