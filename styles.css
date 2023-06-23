@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;500;700&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -14,7 +14,6 @@
 }
 /*----------- header styles----------- */
 
-
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -26,7 +25,7 @@
   display: none;
 }
 i {
-  font-size: 35px;
+  font-size: 60px;
 }
 #menu {
   display: none;
@@ -87,8 +86,8 @@ i {
   padding: 65px 165px 65px 165px;
   border: 2px solid magenta;
 }
-.main__banner img{
-  width:540px ;
+.main__banner img {
+  width: 540px;
 }
 .main__information {
   display: flex;
@@ -115,39 +114,41 @@ i {
   text-align: right;
 }
 /* ---------STYLES INFORMATION---------- */
-.information{
+.information {
   background-color: var(--violet);
   display: flex;
   justify-content: space-around;
   padding: 40px 0px 40px 0px;
 }
-.information p{
+.information p {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  width: 450px;
-  height: 88px;
+  width: 470px;
   color: #ffffff;
-
 }
-.information h2{
-font-size: 36px;
-font-weight: 700;
-line-height: 41px;
-letter-spacing: 0em;
-text-align: left;
-color: #ffffff;
-width: 450px;
-height: 88px;
-
+.information p:last-child{
+  display: none;
+}
+.information h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  width: 470px;
+ 
 }
 /* --------MEDIA QUERIESS----------- */
 @media only screen and (max-width: 480px) {
   /*header*/
   .header .container {
-    padding: 40px 56px 40px 56px;
+    padding: 40px 0px 40px 0px;
+    width: 85%;
+    margin: auto;
   }
   .header .container label {
     display: flex;
@@ -173,4 +174,53 @@ height: 88px;
   .container .buttom {
     display: none;
   }
+  /* -------------MAIN mobile-------------------- */
+.main {
+  flex-direction: column;
+  margin: auto;
+  padding: 40px 0px 40px 0px;
+  gap: 80px;
+  width: 85%;
 }
+
+.main .main__banner img,
+.main__information {
+  width: 100%;
+}
+.main__information h1 {
+  font-size: 40px;
+}
+.main__information p {
+  font-size: 14px;
+}
+
+/* ------------Information MOBILE-------------- */
+.information{
+  flex-direction: column;
+  background-color: var(--lightBlue);
+  gap: 30px;
+  
+}
+.information h2, .information p{
+  width: 90%;
+  margin: auto;
+}
+.information h2{
+  font-size: 30px;
+  font-weight: 500;
+}
+.information p{
+  font-size: 15px;
+  font-weight: 300;
+}
+.information p{
+  display: none;
+}
+.information p:last-child{
+  display: flex;
+}
+
+
+
+}
+/* ---------------------ACA ACABA mediaaa QUERIESSS------------------ */
