@@ -10,6 +10,7 @@
 }
 :root {
   --violet: #8b48bf;
+  --violetLight: rgba(139, 72, 191, 0.3);
   --lightBlue: #3cddf3;
   --blueGray: #1e1e26;
   --darkBlue: #232851;
@@ -250,6 +251,7 @@ i {
     flex-direction: column;
     background-color: var(--lightBlue);
     gap: 30px;
+    margin-bottom: 60px;
   }
   .information h2,
   .information p {
@@ -269,6 +271,37 @@ i {
   }
   .information p:last-child {
     display: flex;
+  }
+  /* ------------BENEFITS mobile--------------- */
+  .benefits {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 34px;
+    border: 2px red solid;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .benefits__card {
+    margin-top: 20px;
+    width: 100%;
+    border: solid 1px blue;
+  }
+  .benefits__card .title {
+    background-color: var(--violetLight);
+    border-radius:30px  0px 0px 30px;
+  }
+  .benefits__card .title .buttom {
+    animation: none;
+    overflow: auto;
+  }
+  .card__information p {
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    width: 100%;
+    padding-top: 20px;
   }
 }
 /* ---------------------ACA ACABA mediaaa QUERIESSS------------------ */
