@@ -13,17 +13,20 @@
   --lightBlue: #3cddf3;
 }
 /*----------- header styles----------- */
+
+
 .header .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid green;
   padding: 65px 165px 65px 165px;
 }
-.header .container label{
+.header .container label {
   display: none;
 }
 i {
-    font-size: 35px;
+  font-size: 35px;
 }
 #menu {
   display: none;
@@ -31,16 +34,123 @@ i {
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 28px;
+}
+.nav li a:hover {
+  color: var(--violet);
+  font-weight: bold;
+}
+.buttom {
+  background-color: var(--violet);
+  width: 134px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 50px;
+}
+.buttom:hover {
+  animation: latidos 1.5s infinite alternate;
 }
 
+@keyframes latidos {
+  0% {
+    background-color: var(--violet);
+    transform: scale(1);
+  }
+  50% {
+    background-color: var(--lightBlue);
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: var(--violet);
+    transform: scale(1);
+  }
+}
+
+.buttom a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 500;
+  /* font-size: 13.18px;
+  line-height: 19.26px; */
+}
+.header .container .buttom {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ----------Styles MAIN------------- */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 65px 165px 65px 165px;
+  border: 2px solid magenta;
+}
+.main__banner img{
+  width:540px ;
+}
+.main__information {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: solid blue 1px;
+  width: 450px;
+  height: 90%;
+}
+.main__information h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: -0.035em;
+  text-align: right;
+}
+.main__information p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+/* ---------STYLES INFORMATION---------- */
+.information{
+  background-color: var(--violet);
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0px 40px 0px;
+}
+.information p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 450px;
+  height: 88px;
+  color: #ffffff;
+
+}
+.information h2{
+font-size: 36px;
+font-weight: 700;
+line-height: 41px;
+letter-spacing: 0em;
+text-align: left;
+color: #ffffff;
+width: 450px;
+height: 88px;
+
+}
+/* --------MEDIA QUERIESS----------- */
 @media only screen and (max-width: 480px) {
   /*header*/
-  .header .container{
+  .header .container {
     padding: 40px 56px 40px 56px;
   }
-  .header .container label{
-    display:flex;
+  .header .container label {
+    display: flex;
   }
   .nav {
     position: absolute;
@@ -54,10 +164,13 @@ i {
     transition: all 0.5s ease-in-out;
     background-color: var(--violet);
   }
-  .nav li a{
+  .nav li a {
     color: white;
   }
   #menu:checked ~ nav {
     left: 50%;
+  }
+  .container .buttom {
+    display: none;
   }
 }
