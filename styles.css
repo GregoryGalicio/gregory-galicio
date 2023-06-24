@@ -287,6 +287,9 @@
 }
 
 /* ------INFORMATION2 o LAST CHILD------------ */
+#information2{
+  padding: 60px 0px 60px 0px;
+}
 #information2 .buttom {
   background-color: white;
   animation: none;
@@ -365,6 +368,20 @@ footer {
   display: flex;
   align-items: flex-start;
 }
+.form__row input{
+  border:none;
+  outline: none;
+  /* border: 2px solid yellowgreen; */
+  width: 201px;
+  padding: 12px 0;
+  border-radius: 50px;
+
+}
+.form .buttom{
+  width: 63px;
+  color: white;
+  text-align: center;
+}
 .copy {
   display: flex;
   justify-content: flex-end;
@@ -377,7 +394,7 @@ footer {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-  color:  #8C8C94;
+  color: #8c8c94;
 }
 
 /* --------MEDIA QUERIESS----------- */
