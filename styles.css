@@ -456,6 +456,10 @@ footer {
   .nav li a {
     color: white;
   }
+  .nav li a:hover {
+    color: var(--lightBlue);
+    font-weight: bold;
+  }
   #menu:checked ~ nav {
     left: 50%;
   }
