@@ -548,21 +548,54 @@ footer {
     width: 100%;
     padding-top: 20px;
   }
+  /* -------BEST mobile------------ */
+
+  .best{
+    margin: 50px 0px;
+  }
+  .best > h2 {
+    font-size: 39px;
+  }
+  .best .cardContainer {
+    gap: 60px;
+  }
+  .textContainer {
+    box-shadow: none;
+  }
+
+  /* -----------INFORMATION 2 mobile----------- */
+
+  #information2 {
+    margin: 0px;
+    border: 1px solid magenta;
+    padding: 40px;
+  }
+  #information2 > h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.005em;
+    padding: 0px 15px;
+  }
   /* ---------FOOTER MOBILE------- */
   footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     /* justify-content: center; */
   }
-  .widgets {
+  footer .widgets {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     gap: 30px;
+    border: magenta solid 1px;
+    /* width: 90%; */
   }
   .footer__widget {
     flex-direction: column-reverse;
     align-items: center;
+    gap: 30px;
   }
   .footer__widget .icons {
     /* border: solid 2px green; */
@@ -570,39 +603,30 @@ footer {
   }
   .footer__widget .icons ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* border: solid 1px red; */
     width: 100%;
   }
-  .form__row{
+  .form__row {
     padding-left: 10px;
   }
-  .form__row input{
-    width: 308px;
-    
+  .form__row input {
+    width: 308 px;
   }
-  
-  footer .copy {
+
+  .copy {
     /* border: solid 1px yellowgreen; */
-    margin: auto;
-  
+    padding: 0px;
   }
-  footer .copy>h3 {
-    
+  footer .copy > h3 {
     font-size: 10px;
     font-weight: 500;
     letter-spacing: 0em;
     /* border: #3cddf3 1px solid; */
-    width: 233px;
-    margin-left: 100px;
-   
   }
-  .footer__nav{
-    width: 85%;
+  .footer__nav {
+    width: 90%;
     margin-left: 10%;
-  }
-  .best .cardContainer{
-    gap:60px;
   }
 }
 /* ---------------------ACA ACABA mediaaa QUERIESSS------------------ */
