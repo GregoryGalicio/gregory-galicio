@@ -575,7 +575,7 @@ footer {
 
   #information2 {
     margin: 0px;
-    border: 1px solid magenta;
+    /* border: 1px solid magenta; */
     padding: 40px;
   }
   #information2 > h2 {
@@ -597,7 +597,7 @@ footer {
     flex-direction: column-reverse;
     flex-wrap: wrap;
     gap: 30px;
-    border: magenta solid 1px;
+    /* border: magenta solid 1px; */
     /* width: 90%; */
   }
   .footer__widget {
