@@ -319,6 +319,8 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
+  border: 2px solid yellow;
+  padding: 20px;
 }
 .widgets {
   display: flex;
@@ -367,6 +369,7 @@ footer {
 .form {
   display: flex;
   align-items: flex-start;
+  gap:10px
 }
 .form__row input{
   border:none;
@@ -374,9 +377,12 @@ footer {
   /* border: 2px solid yellowgreen; */
   width: 201px;
   padding: 12px 0;
+  padding-left: 15px;
   border-radius: 50px;
-
+  color: #A0A0A0;
+  
 }
+
 .form .buttom{
   width: 63px;
   color: white;
