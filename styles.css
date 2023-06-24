@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   padding: 65px 165px 65px 165px;
 }
 .header .container label {
@@ -87,7 +87,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 65px 165px 65px 165px;
-  border: 2px solid magenta;
+  /* border: 2px solid magenta; */
   margin: auto;
 }
 .main__banner img {
@@ -99,7 +99,7 @@
   gap: 30px;
   align-items: flex-end;
   justify-content: space-between;
-  border: solid blue 1px;
+  /* border: solid blue 1px; */
   width: 450px;
   height: 90%;
 }
@@ -157,7 +157,7 @@
 }
 .benefits__card {
   width: 553px;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
   gap: 20px;
 }
 .benefits__card .title {
@@ -191,12 +191,12 @@
   letter-spacing: -0.01em;
   text-align: left;
   width: 95%;
-  border: solid 1px yellowgreen;
+  /* border: solid 1px yellowgreen; */
 }
 
 /* ----------CARDS BEST------------- */
 .best {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,7 +218,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin-top: 100px;
 }
 
@@ -232,7 +232,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid cyan;
+  /* border: 1px solid cyan; */
 }
 .icon {
   position: absolute;
@@ -287,7 +287,7 @@
 }
 
 /* ------INFORMATION2 o LAST CHILD------------ */
-#information2{
+#information2 {
   padding: 60px 0px 60px 0px;
 }
 #information2 .buttom {
@@ -319,7 +319,7 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   padding: 20px;
 }
 .widgets {
@@ -329,7 +329,7 @@ footer {
 }
 .footer__widget {
   color: white;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -342,7 +342,7 @@ footer {
 .footer__nav {
   display: flex;
   justify-content: space-between;
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   width: 393px;
 }
 .footer__nav__principal ul {
@@ -369,21 +369,20 @@ footer {
 .form {
   display: flex;
   align-items: flex-start;
-  gap:10px
+  gap: 10px;
 }
-.form__row input{
-  border:none;
+.form__row input {
+  border: none;
   outline: none;
   /* border: 2px solid yellowgreen; */
   width: 201px;
   padding: 12px 0;
   padding-left: 15px;
   border-radius: 50px;
-  color: #A0A0A0;
-  
+  color: #a0a0a0;
 }
 
-.form .buttom{
+.form .buttom {
   width: 63px;
   color: white;
   text-align: center;
@@ -410,13 +409,13 @@ footer {
     padding: 40px 0px 40px 0px;
     width: 85%;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
   }
   .header .container .icono__hamburguesa {
     display: flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
   /* .icono__hamburguesa>img {
     display: block;
@@ -442,13 +441,13 @@ footer {
     width: 50%;
     transition: all 0.5s ease-in-out;
     background-color: var(--violet);
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
   .nav ul {
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    border: 2px solid greenyellow;
+    /* border: 2px solid greenyellow; */
   }
   .nav li a {
     color: white;
@@ -524,14 +523,14 @@ footer {
     margin: 0px;
     padding: 0px;
     padding-left: 34px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     width: 100%;
     margin-bottom: 60px;
   }
   .benefits__card {
     margin-top: 20px;
     width: 100%;
-    border: solid 1px blue;
+    /* border: solid 1px blue; */
   }
   .benefits__card .title {
     background-color: var(--violetLight);
@@ -548,6 +547,62 @@ footer {
     line-height: 26px;
     width: 100%;
     padding-top: 20px;
+  }
+  /* ---------FOOTER MOBILE------- */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .widgets {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer__widget {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer__widget .icons {
+    /* border: solid 2px green; */
+    width: 100%;
+  }
+  .footer__widget .icons ul {
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 1px red; */
+    width: 100%;
+  }
+  .form__row{
+    padding-left: 10px;
+  }
+  .form__row input{
+    width: 308px;
+    
+  }
+  
+  footer .copy {
+    /* border: solid 1px yellowgreen; */
+    margin: auto;
+  
+  }
+  footer .copy>h3 {
+    
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    /* border: #3cddf3 1px solid; */
+    width: 233px;
+    margin-left: 100px;
+   
+  }
+  .footer__nav{
+    width: 85%;
+    margin-left: 10%;
+  }
+  .best .cardContainer{
+    gap:60px;
   }
 }
 /* ---------------------ACA ACABA mediaaa QUERIESSS------------------ */
