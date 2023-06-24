@@ -314,10 +314,54 @@
 footer {
   background-color: var(--blueGray);
   color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
 }
 .footer__widget {
   color: white;
-  text-align: center;
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+
+}
+.icons ul {
+  display: flex;
+  gap: 10px;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid magenta;
+  width: 393px;
+}
+.footer__nav__principal ul{
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+.footer__nav__second ul{
+  display: flex;
+  flex-direction: column;
+  gap:10px
+}
+.footer__nav__principal ul li a {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+.footer__nav__second ul li a {
+  color: white;
+}
+.form{
+  display: flex;
+  align-items: flex-start;
 }
 
 /* --------MEDIA QUERIESS----------- */
