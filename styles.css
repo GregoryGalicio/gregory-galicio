@@ -247,6 +247,10 @@
   margin-left: -100px;
   /* margin-top: -40px; */
   border-radius: 50%;
+  cursor: pointer;
+}
+.corazon:hover{
+  display: none;
 }
 .textContainer h2 {
   margin-top: 64px;
